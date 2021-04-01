@@ -1,0 +1,2 @@
+SHAREDFLAG +=
+EXE = yes

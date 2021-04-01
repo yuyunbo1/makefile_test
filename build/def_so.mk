@@ -1,0 +1,2 @@
+SHAREDFLAG += -shared 
+EXE = no
