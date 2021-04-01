@@ -1,3 +1,5 @@
+build
+	是以so形式进行编译的
 1.1 设计方向
 1.	将所有makefile放在build目录下
 2.	生成的中间目标.o文件、依赖的.d文件，so以及bin文件分别放在output下的obj、dep、lib、bin目录下
@@ -7,6 +9,9 @@
 	c)	子模块的mk只负责定义源文件SRCS、以及头文件搜索目录INCLUDE、依赖的so LIBS以及搜索的路径LIBS_INCLUDE
 	d)	差异定义mk, app和so的最后在链接阶段是不同的，APP不需要shared 链接选项。
 	e)	公共定义mk负责定义CC LD RM等命令变量以及CFLAG等命令参数变量
+
+build_lib.a
+	是以静态库形式组织编译的，没有太大的区别，设计原则相同
 
 
 
